@@ -81,7 +81,8 @@ def interpolation_search(arr, val):
 if __name__ == "__main__":
     val, arr_size = get_search_params()
 
-    arr = list(i**2 for i in range(arr_size))
+    arr = list(range(0, arr_size + 1))
+    print (arr)
     index = interpolation_search(arr, val)
 
     if index != -1:
